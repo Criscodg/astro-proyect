@@ -1,0 +1,13 @@
+header {
+  margin: 0;
+}
+.container {
+  background-image: url(../../public/lp.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+/* .section{
+    margin: 50px;
+} */
