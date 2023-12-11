@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/Layout.css";
+import "../../tailwind.config.mjs"
 ---
 
 <Layout title="Landing-page" pageDescription="page to receive free ebook">
@@ -8,59 +9,81 @@ import "../styles/Layout.css";
     <div class="container"></div>
   </header>
   <main>
-    <div class="p-10">
-      <h1 class="text-5xl font-bold">Empower <br />Your Business</h1>
-      <h2 class="text-3xl">
+    <div class="px-32 py-10 leading-loose tracking-widest">
+      <h1 class="text-7xl font-poppins my-4">Empower <br />Your Business</h1>
+      <h2 class="text-3xl font-inter font-bold">
         Kickstart Your Social Media Success – <br />Essential First Steps eBook
         Tailored for SME Owners!
       </h2>
     </div>
-    <section
-      class="flex flex-col md:flex-row justify-between gap-3 p-10 text-center md:text-left"
+    <div
+      class="flex flex-col items-center md:flex-row justify-between gap-2 md:px-32"
     >
-      <div>
-        <h1 class="text-5xl font-bold">
+      <img class="w-64 h-80" src="../../public/1.png" alt="Social Strategy" />
+      <img class="w-64 h-80" src="../../public/2.png" alt="Social Strategy" />
+      <img class="w-64 h-80" src="../../public/3.png" alt="Social Strategy" />
+    </div>
+    <section
+      class="flex flex-col md:flex-row justify-between gap-x-10 px-32 py-10 text-center md:text-justify leading-loose tracking-widest"
+    >
+      <div class="font-roboto">
+        <h1 class="text-3xl font-bold">
           Do you want to effectively leverage Social Media for growth and
           success.
+          <div class="h-2 my-3 bg-amber-400"></div>
         </h1>
       </div>
       <p class="text-3xl">
         Discover the proven strategies and essential insights in our ebook, 'The
         Social Strategy'. Uncover the power of tailored social media marketing,
         learn which platforms suit your business best, and explore creative ways
-        to engage your audience. This comprehensive guide is your key to
-        navigating the dynamic landscape of social media, ensuring your business
-        not only survives but thrives in the digital realm. <br />
+        to engage your audience.<br />
+        <br />This comprehensive guide is your key to navigating the dynamic
+        landscape of social media, ensuring your business not only survives but
+        thrives in the digital realm. <br />
+        <br />
          Elevate your brand with confidence — this ebook is your roadmap to
         social media success.
       </p>
     </section>
-    <h1 class="text-center font-bold text-5xl mt-10">
-      Frequently Asked Questions (FAQs)
-    </h1>
-    <div class="text-center px-40 py-5">
-      <h3 class="text-3xl py-2 my-1 rounded-xl bg-yellow-300">
-        How can social media benefit my small business?
-      </h3>
-      <h3 class="text-3xl p-2 my-1 rounded-xl bg-yellow-300">
-        Why should I consider outsourcing my social media management?
-      </h3>
-      <h3 class="text-3xl p-2 my-1 rounded-xl bg-yellow-300">
-        Which social networks should my business be on?
-      </h3>
-    </div>
+    <section class="font-poppins font-extrabold">
+      <h1 class="text-center text-3xl mt-8">
+        Frequently Asked Questions (FAQs)
+      </h1>
+      <div class="text-left mx-32 py-5">
+        <h3
+          class="text-2xl py-5 px-10 my-1 bg-amber-400 bg-opacity-30 tracking-widest leading-loose"
+        >
+          How can social media benefit my small business?
+        </h3>
+        <h3
+          class="text-2xl py-5 px-10 my-1 bg-amber-400 bg-opacity-30 tracking-widest"
+        >
+          Why should I consider outsourcing my social media management?
+        </h3>
+        <h3
+          class="text-2xl py-5 px-10 my-1 bg-amber-400 bg-opacity-30 tracking-widest leading-loose"
+        >
+          Which social networks should my business be on?
+        </h3>
+      </div>
+    </section>
     <section
-      class="flex flex-col md:flex-row justify-between gap-3 p-10 text-center md:text-left"
+      class="flex flex-col md:flex-row justify-between gap-x-10 px-32 py-10 text-center md:text-justify leading-loose tracking-widest"
     >
       <div>
-        <h1 class="text-3xl font-bold">
+        <h1 class="text-3xl font-poppins">
           Ready to kickstart your Social Media strategy and elevate your brand's
           online presence?
         </h1>
       </div>
-      <p class="text-3xl rounded-xl bg-yellow-300">
-        <button>Start now!</button>
-      </p>
+      <div>
+        <button
+          class="w-60 h-14 bg-yellow-400 hover:bg-yellow-500 transition duration-150 transform hover:scale-105 rounded-md drop-shadow-lg border-2 border-b-4 border-r-4 border-black text-3xl font-bold cursor-pointer"
+        >
+          Star Now!
+        </button>
+      </div>
     </section>
   </main>
   <footer></footer>
